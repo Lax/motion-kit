@@ -19,7 +19,6 @@ before_install:
   - (motion --version)
   - (ruby --version)
 script:
-  - bundle install
-  - bundle exec rake clean spec
+  - bundle exec rake clean spec device_name='iPhone SE'
   - bundle exec rake clean spec platform=osx
   - bundle exec rake clean spec platform=tvos
